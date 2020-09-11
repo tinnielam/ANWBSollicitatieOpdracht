@@ -9,7 +9,7 @@ class User {
 
   public makeCallToBackendTest(): void {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://anwbtinlam.tinlam.repl.co/api/anwb");
+    xhr.open("GET", "https://anwbtinlam.tinlam.repl.co/verkeersinformatie");
     xhr.onload = () => {
       if (xhr.status === 200) {
         document.getElementById("app").innerHTML += xhr.responseText;
